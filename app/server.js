@@ -22,8 +22,8 @@ app.use(bodyParser.json());
 
 const userRoute = require('./route/usuario/usuario.route');
 userRoute(app);
-//const produtoRoute = require('./route/produto/produto.route');
-//produtoRoute(app);
+const produtoRoute = require('./route/produto/produto.route');
+produtoRoute(app);
 
 app.listen(port);
 console.log('Servidor NodeJS rodando na porta: '+port);
